@@ -73,6 +73,8 @@ func Register(c *fiber.Ctx) error {
 func Login(c *fiber.Ctx) error {
 	var data map[string]string
 
+	//fmt.Println("test golang")
+
 	if err := c.BodyParser(&data); err != nil {
 		fmt.Println("Unable to parse body")
 	}
